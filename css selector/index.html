@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+</head>
+<style>
+    /*element selector*/
+   div{
+    background-color: brown;
+   }
+    /*class selector*/
+   .blue{
+    background-color: rgb(52, 170, 206);
+   }
+    /*id selector*/
+    #green{
+        background-color: rgb(41, 185, 41);
+    }
+     /*child selector*/
+    div > p{
+        color: black;
+        background-color: aqua;
+    }
+     /*descendant selector*/
+     div p {
+        color: white;
+     }
+     /*pseudo selector hover visit */
+     a:visited{
+        color: red;
+     }
+     a:hover{
+        color: blueviolet;
+     }
+     a:active{
+        background-color: black;
+     }
+</style>
+<body>
+    <div> It is a div
+        <p>para... inside a div </p>
+    </div>
+    <div class="blue"> It is a div</div>
+    <div> It is a div</div>
+    <div> It is a div</div>
+    <div id="green"> It is a div</div>
+    <a href="https://www.google.com">GOOGLE</a>
+</body>
+</html>
