@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .parent{
+        margin: 30px;
+        border: 1px solid black;
+    }
+    .box{
+        border: 2px solid skyblue;
+        height: 150px;
+        width: 60vw;
+        margin: 3px;
+        padding: 3px;
+    }
+    .box0{
+        background-color: pink;
+        height: 2px;
+        font-weight: 100%;
+        position: sticky;
+        top: 0px;
+    }
+    .box1{
+        background-color: rgb(102, 249, 249);
+        position: absolute;/*relative of nearest parent*/
+        top: 5px;
+        left: 10px;
+        z-index: 1px;
+    }
+    .box2{
+        background-color: rgb(96, 223, 223);
+        position: relative;
+        top: -38px;
+        left: 100px;
+    }
+    .box3{
+        position: fixed;/*can't move when the page is scroll*/
+        left: 20vw;
+        background-color: rgb(59, 189, 189);
+    }
+    .box3{
+        background-color: rgb(84, 190, 190);
+    }
+    .box4{
+        background-color: rgb(41, 177, 177);
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="box box0">
+        </div
+    <div class="box box1">
+        History's first recorded animator is,
+        arguably, Pygmalion of Greek and Roman mythology. 
+        The theory of the animated cartoon preceded the invention of 
+        the cinema by half a century.4
+    </div>
+    <div class="box box2">
+        History's first recorded animator is, arguably, Pygmalion
+        of Greek and Roman mythology. The theory of the animated 
+        cartoon preceded the invention of the cinema by half a century.4
+    </div>
+    <div class="box box3">
+        History's first recorded animator is, arguably, Pygmalion
+        of Greek and Roman mythology. The theory of the animated 
+        cartoon preceded the invention of the cinema by half a century.4
+    </div>
+    <div class="box box4">
+        History's first recorded animator is, arguably,
+        Pygmalion of Greek and Roman mythology. The theory of the
+        animated cartoon preceded the invention of the cinema by half 
+        century.4
+    </div>
+    </div>
+</body>
+</html>
