@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OVERFLOW Property</title>
+</head>
+<style>
+    .box{
+        height: 20vw;
+        width: 80vw;
+        overflow: auto;
+        overflow-y: scroll ;
+    }
+    .box2{
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid ;
+        overflow: clip;/*can't scroll or hidden content*/
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+</style>
+<body>
+    <div class="box">
+        Short moral stories are best for children who
+        have been reading for generations. These short 
+        with morals are popular in different languages and parts
+        of the world. A moral story depicts practical situations 
+        excitingly and carries a message that imbibes moral values 
+        in the children. Different short moral stories teach different
+        lessons to kids. The stories also make children responsible,
+        respectful, empathetic, and honest from a very early age.
+    </div>
+    <div class="box2">
+        Short moral stories are best for children who
+        have been reading for generations. These short 
+        with morals are popular in different languages and parts
+        of the world.
+    </div>
+</body>
+</html>
