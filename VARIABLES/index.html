@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /*Global variable*/
+        :root{
+            --color:blue; 
+            --sec-color:rgb(23, 23, 200);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color:var(--color);
+        }
+        .container{
+            background-color:var(--sec-color) ;
+        }
+        ul{
+            display: flex;
+        }
+        ul li:first-child{
+            --color: palevioletred;
+            border: 2px solid var(--color);
+            color: var(--color);
+        }
+        ul li{
+            padding: 10px;
+            list-style: none;
+            border: 4px solid var(--sec-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </div> 
+    <div class="container">
+        A moral story depicts practical situations 
+        excitingly and carries a message that imbibes moral 
+        values in the children.
+    </div>
+</body>
+</html>
