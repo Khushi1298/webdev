@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        a,p,.box,[data-color="primary"]{
+            padding: 40px;
+        }
+        .box:nth-last-child(1)
+        {
+            color: yellow;
+        }
+        ::selection{
+            color: rgb(28, 145, 106);
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: rgb(66, 15, 232);
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">I am a box </div>
+        <div class="box">I am a box</div>
+    <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>
