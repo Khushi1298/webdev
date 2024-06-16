@@ -1,0 +1,15 @@
+.container{
+    border: 3px solid palevioletred;
+    padding: 4px ;
+    display: flex;
+    height: 80px;
+    justify-content: center;/*particular row m center*/
+    align-items: center;/*mid of the div */
+}
+.item{
+    height: 15px;
+    width: 15px;
+    background-color: turquoise;
+    border: 2px solid black;
+    margin: 2px;
+}
