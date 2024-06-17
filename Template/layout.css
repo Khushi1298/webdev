@@ -39,6 +39,7 @@ ul li a {
 .container{
     padding: 20px;
     margin-top: 2px;
+    max-height: 400vh;
     background-color: var(--background-color);
 }
 .box{
@@ -64,15 +65,18 @@ ul li a {
     border: 2px solid white;
     padding: 4px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .icon {
-    text-align: right;
+    position: fixed;
+    bottom: 20px;
+    top: 30px;
+    right: 20vh;
     margin: 20px 0;
     font-size: 2em;
-    position: sticky;
 }
 .end{
+    margin-top: 4px;
     padding: 5px;
     background-color: aquamarine;
 }
