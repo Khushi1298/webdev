@@ -4,7 +4,11 @@
     display: flex;
     height: 80px;
     justify-content: center;/*particular row m center*/
-    align-items: center;/*mid of the div */
+    align-items: center;/*mid of the div ,,uses only for one line*/
+    flex-wrap: wrap; /* reduces overflow item will be show in next line*/
+    align-content: center;/*when we have multiple lines*/
+    flex-flow: row wrap;/* flex direction flx wrap */
+    column-gap: 30px;
 }
 .item{
     height: 15px;
@@ -12,4 +16,8 @@
     background-color: turquoise;
     border: 2px solid black;
     margin: 2px;
+}
+.item1{
+    flex-grow: 2;
+    flex-shrink: 2;
 }
