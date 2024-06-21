@@ -2,3 +2,14 @@
     padding: 0;
     margin: 0;
 }
+.container{
+    border: 2px solid black;
+    margin: 5%;
+}
+.item{
+    border: 2px solid paleturquoise;
+    height: 50px;
+    width: 50%;
+    padding: 5%;
+    margin: 7px;
+}
