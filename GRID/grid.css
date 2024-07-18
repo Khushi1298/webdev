@@ -5,6 +5,7 @@
 .container{
     border: 2px solid black;
     margin: 5%;
+    grid-template-columns: 200px 120px;
 }
 .item{
     border: 2px solid paleturquoise;
